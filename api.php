@@ -61,7 +61,7 @@ switch ($name) {
 					$text = $data[1];
 				}else if($k > 24 && $k<35){
 					$text = $data[2];
-				}else if($k > 36 && $k<48){
+				}else if($k > 37 && $k<48){
 					$text = $data[3];
 				}else{
 					$text = '';
@@ -81,8 +81,8 @@ switch ($name) {
 
 			$gif = new GIFEncoder(  
 			    $imagedata,  
-			    200,  
-			    0,  
+			    13,  
+			    1,  
 			    0,  
 			    0, 0, 1,  
 			    "bin"

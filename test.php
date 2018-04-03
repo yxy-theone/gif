@@ -45,7 +45,7 @@ foreach ($layer_imgs as $k => $v) {
 		$text = $data[1];
 	}else if($k > 24 && $k<35){
 		$text = $data[2];
-	}else if($k > 36 && $k<48){
+	}else if($k > 37 && $k<48){
 		$text = $data[3];
 	}else{
 		$text = '';
@@ -64,10 +64,11 @@ foreach ($layer_imgs as $k => $v) {
 	ob_clean();
 }
 
+//没镇间隔 13/100 s
 $gif = new GIFEncoder(  
     $imagedata,  
-    100,  
-    0,  
+    13,  
+    1,  
     0,  
     0, 0, 1,
     "bin"
