@@ -82,7 +82,7 @@ switch ($name) {
 			$gif = new GIFEncoder(  
 			    $imagedata,  
 			    13,  
-			    1,  
+			    0,  
 			    0,  
 			    0, 0, 1,  
 			    "bin"
